@@ -1,0 +1,24 @@
+.read-more {
+	display: inline-flex;
+	align-items: center;
+	gap: 13px;
+
+  color: var(--accent);
+  font-weight: 500;
+  line-height: 1;
+	
+	&::after {
+		content: url('./../../img/icons/icons_form-next-link.svg');
+		height: 24px;
+		transition: all .2s ease;
+	}
+
+	&:hover::after {
+		transform: translateX(10px);
+	}
+
+	&--large {
+		font-size: 18px;
+	}
+
+}

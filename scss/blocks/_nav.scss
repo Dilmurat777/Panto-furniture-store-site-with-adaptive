@@ -1,0 +1,18 @@
+.nav {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  padding-top: clamp(0.625rem, 0.089rem + 2.68vw, 2.5rem);
+  padding-bottom: clamp(0.625rem, 0.089rem + 2.68vw, 2.5rem);
+}
+.nav__logo {
+  align-self: center;
+}
+
+.nav-btn {
+  display: none;
+
+
+  @include tablet() {
+    display: block;
+  }
+}

@@ -1,0 +1,30 @@
+.sub-nav-ul {
+	display: grid;
+	gap: 16px;
+
+	padding: 20px;
+	border-radius: 16px;
+	background-color: var(--footer-bg);
+
+	color: var(--footer-text);
+	font-size: 16px;
+
+	a {
+		color: var(--footer-text);
+
+		transition: all 0.2s ease-in;
+
+		&:hover {
+			color: var(--accent);
+		}
+	}
+
+}
+
+
+.sub-nav__item-li {
+	// background-color: #8b8888;
+}
+.sub-nav__link {
+	// background-color: #da9c9c;
+}

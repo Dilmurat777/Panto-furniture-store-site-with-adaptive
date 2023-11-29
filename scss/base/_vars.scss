@@ -1,0 +1,44 @@
+:root {
+	--text-color: #1e1e1e;
+	--text-muted: #8d8d8d;
+	--text-card-dark-blue: #0d1b39;
+	--accent: #E58411;
+	
+	--header-text-color: #ffffff;
+
+	--footer-accent: #F6973F;
+	--footer-bg: #2D2F33;
+	--footer-text: rgb(255, 255, 255, 0.8);
+
+
+	--ui-orange: #E58411;
+	--ui-biruza: #00D6C9;
+	--ui-gray: #7C7C7C;
+  --ui-dark-blue: #0d1b39;
+
+	--font-main: 'Gilroy', sans-serif;
+	--font-cards: 'Inter', sans-serif;
+	--font-footer-accent: 'DM Sans', sans-serif;
+}
+
+@mixin retina-bg($image) {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Retina-specific stuff here */
+
+    .header {
+      background-image: $image;
+    }
+  }
+}
+
+
+@mixin tablet() {
+	@media (max-width: 992px) {
+		@content;
+	}
+}
+@mixin mini-tablet() {
+	@media (max-width: 819px) {
+		@content;
+	}
+}
