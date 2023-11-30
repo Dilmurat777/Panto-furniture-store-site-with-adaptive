@@ -13,6 +13,13 @@
     color: var(--header-text-color);
   }
 
+  @include mobile() {
+    padding-top: 20px;
+
+    padding-bottom: 240px;
+    background-position: center;
+    aspect-ratio: unset;
+  }
 
 }
 
@@ -45,7 +52,9 @@
 }
 
 .header__search {
+  position: relative;
   margin-top: 45px;
+  z-index: 10;
 
   @include mini-tablet() {
     display: none;
@@ -54,7 +63,7 @@
 
 .header__dot{
   position: absolute;
-
+  z-index: 10;
 
   @include mini-tablet {
 
@@ -81,11 +90,12 @@
 }
 
 
-// .overlay {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   background-color: rgba(0,0,0,0.3);
-// }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.1);
+  // z-index: 1;
+}

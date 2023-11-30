@@ -17,16 +17,17 @@
           </div>
 
           <ul class="nav-list">
-            <li class="nav-list__item"><a href="#!" class="nav-list__link nav-list__link--dropdown">Furniture</a>
-								<div class="nav-list__sub-nav">
-									<ul class="sub-nav-ul">
-										<li class="sub-nav__item-li"><a href="#!" class="sub-nav__link">Home</a></li>
-										<li class="sub-nav__item-li"><a href="#!" class="sub-nav__link">Services</a></li>
-										<li class="sub-nav__item-li"><a href="#!" class="sub-nav__link">Products</a></li>
-										<li class="sub-nav__item-li"><a href="#!" class="sub-nav__link">Contacts</a></li>
-									</ul>
-								</div>
-						</li>
+            <li class="nav-list__item">
+              <a href="#!" class="nav-list__link nav-list__link--dropdown">Furniture</a>
+              <div class="nav-list__sub-nav">
+                <ul class="sub-nav-ul">
+                  <li class="sub-nav__item-li"><a href="#!" class="sub-nav__link">Home</a></li>
+                  <li class="sub-nav__item-li"><a href="#!" class="sub-nav__link">Services</a></li>
+                  <li class="sub-nav__item-li"><a href="#!" class="sub-nav__link">Products</a></li>
+                  <li class="sub-nav__item-li"><a href="#!" class="sub-nav__link">Contacts</a></li>
+                </ul>
+              </div>
+            </li>
             <li class="nav-list__item"><a href="#!" class="nav-list__link">Shop</a></li>
             <li class="nav-list__item"><a href="#!" class="nav-list__link">About Us</a></li>
             <li class="nav-list__item"><a href="#!" class="nav-list__link">Contact</a></li>
@@ -37,9 +38,9 @@
             <div class="cart__count">0</div>
           </a>
 
-					<button class="nav-btn">
-						<img src="./img/icons/mobile-nav.svg" alt="open menu">
-					</button>
+          <button class="nav-btn">
+            <img src="./img/icons/mobile-nav.svg" alt="open menu" />
+          </button>
         </nav>
 
         <div class="header__content">
@@ -61,7 +62,7 @@
             <div class="info-dot__circle"></div>
             <div class="info-dot__radius"></div>
           </button>
-          <div class="info-hint none">
+          <div class="info-hint">
             <label>
               <input type="radio" name="sofa-color" class="info-hint__radio" />
               <div class="info__radio-fake info__radio-fake--orange"></div>
@@ -84,7 +85,7 @@
             <div class="info-dot__radius"></div>
           </button>
 
-          <div class="info-hint none">
+          <div class="info-hint">
             <label>
               <input type="radio" name="sofa-vase" class="info-hint__radio" />
               <div class="info__radio-fake info__radio-fake--orange"></div>
@@ -106,7 +107,7 @@
             <div class="info-dot__circle"></div>
             <div class="info-dot__radius"></div>
           </button>
-          <div class="info-hint none">
+          <div class="info-hint">
             <label>
               <input type="radio" name="sofa-item" class="info-hint__radio" />
               <div class="info__radio-fake info__radio-fake--orange"></div>
@@ -128,7 +129,7 @@
             <div class="info-dot__circle"></div>
             <div class="info-dot__radius"></div>
           </button>
-          <div class="info-hint none">
+          <div class="info-hint">
             <label>
               <input type="radio" name="sofa-wall" class="info-hint__radio" />
               <div class="info__radio-fake info__radio-fake--orange"></div>
@@ -146,44 +147,47 @@
           </div>
         </div>
       </div>
-			<div class="overlay"></div>
+      <div class="overlay"></div>
     </header>
 
-		<div class="mobile-nav__wrapper">
+    <div class="mobile-nav__wrapper">
+      <div class="mobile-nav-header">
+        <a href="#cart" class="mobile-cart">
+          <div class="cart">
+            <img class="cart__img" src="./img/icons/shape.svg" alt="cart" />
+            <div class="cart__count">0</div>
+          </div>
+          Cart
+        </a>
 
-			<div class="mobile-nav-header">
-				<a href="#cart" class="mobile-cart">
-					<div class="cart">
-						<img class="cart__img" src="./img/icons/shape.svg" alt="cart" />
-						<div class="cart__count">0</div>
-					</div>
-					Cart
-				</a>
+        <button class="mobile-nav-btn-close">
+          <img src="./img/icons/close.svg" alt="close" />
+        </button>
+      </div>
 
-				<button class="mobile-nav-btn-close"><img src="./img/icons/close.svg" alt="close"></button>
-			</div>
+      <ul class="mobile-nav">
+        <li class="mobile-nav__item">
+          <a href="#!" class="mobile-nav__link mobile-nav__link--dropdown">Furniture</a>
 
-			<ul class="mobile-nav">
-				<li class="mobile-nav__item"><a href="#!" class="mobile-nav__link mobile-nav__link--dropdown">Furniture</a>
-						
-							<ul class="mobile-sub-nav-ul">
-								<li class="sub-nav__item-li"><a href="#!" class="mobile-sub-nav__link">Home</a></li>
-								<li class="sub-nav__item-li"><a href="#!" class="mobile-sub-nav__link">Services</a></li>
-								<li class="sub-nav__item-li"><a href="#!" class="mobile-sub-nav__link">Products</a></li>
-								<li class="sub-nav__item-li"><a href="#!" class="mobile-sub-nav__link">Contacts</a></li>
-							</ul>
-				</li>
-				<li class="mobile-nav__item"><a href="#!" class="mobile-nav__link">Shop</a></li>
-				<li class="mobile-nav__item"><a href="#!" class="mobile-nav__link">About Us</a></li>
-				<li class="mobile-nav__item"><a href="#!" class="mobile-nav__link">Contact</a></li>
-			</ul>
+          <ul class="mobile-sub-nav-ul">
+            <li class="sub-nav__item-li"><a href="#!" class="mobile-sub-nav__link">Home</a></li>
+            <li class="sub-nav__item-li"><a href="#!" class="mobile-sub-nav__link">Services</a></li>
+            <li class="sub-nav__item-li"><a href="#!" class="mobile-sub-nav__link">Products</a></li>
+            <li class="sub-nav__item-li"><a href="#!" class="mobile-sub-nav__link">Contacts</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav__item"><a href="#!" class="mobile-nav__link">Shop</a></li>
+        <li class="mobile-nav__item"><a href="#!" class="mobile-nav__link">About Us</a></li>
+        <li class="mobile-nav__item"><a href="#!" class="mobile-nav__link">Contact</a></li>
+      </ul>
+    </div>
 
-		</div>
-
-    <section class="benefits none">
+    <section class="benefits">
       <div class="container">
         <div class="benefits__grid">
-          <h2 class="benefits__title">Why Choosing Us</h2>
+          <div class="benefits__title">
+            <h2 class="title-2">Why Choosing Us</h2>
+          </div>
 
           <div class="benefit">
             <h3 class="benefit__title">Luxury facilities</h3>
@@ -215,12 +219,16 @@
       </div>
     </section>
 
-    <section class="products none">
+    <section class="products">
       <div class="container">
-        <h2 class="products__title">Best Selling Product</h2>
+        <div class="products__title">
+          <h2 class="title-2">Best Selling Product</h2>
+        </div>
         <div class="products__tabs">
           <div class="tab-controls">
-            <button data-tab="all" class="tab-controls__tabs tab-controls__tabs--active">All</button>
+            <button data-tab="all" class="tab-controls__tabs tab-controls__tabs--active">
+              All
+            </button>
             <button data-tab="chair" class="tab-controls__tabs">Chair</button>
             <button data-tab="beds" class="tab-controls__tabs">Beds</button>
             <button data-tab="sofa" class="tab-controls__tabs">Sofa</button>
@@ -233,6 +241,7 @@
             <!-- Slider main container -->
             <div class="swiper">
               <!-- Additional required wrapper -->
+
 
               <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -367,7 +376,7 @@
                     </div>
                   </div>
                 </article>
-								
+
                 <article data-tab-value="chair" class="card swiper-slide">
                   <a href="#product-page" class="card__link"></a>
                   <div class="card__photo">
@@ -401,7 +410,7 @@
                   </div>
                 </article>
 
-								<article data-tab-value="beds" class="card swiper-slide">
+                <article data-tab-value="beds" class="card swiper-slide">
                   <a href="#product-page" class="card__link"></a>
                   <div class="card__photo">
                     <img
@@ -532,7 +541,7 @@
                     </div>
                   </div>
                 </article>
-								
+
                 <article data-tab-value="beds" class="card swiper-slide">
                   <a href="#product-page" class="card__link"></a>
                   <div class="card__photo">
@@ -566,7 +575,7 @@
                   </div>
                 </article>
 
-								<article data-tab-value="sofa" class="card swiper-slide">
+                <article data-tab-value="sofa" class="card swiper-slide">
                   <a href="#product-page" class="card__link"></a>
                   <div class="card__photo">
                     <img
@@ -697,7 +706,7 @@
                     </div>
                   </div>
                 </article>
-								
+
                 <article data-tab-value="sofa" class="card swiper-slide">
                   <a href="#product-page" class="card__link"></a>
                   <div class="card__photo">
@@ -731,7 +740,7 @@
                   </div>
                 </article>
 
-								<article data-tab-value="lamp" class="card swiper-slide">
+                <article data-tab-value="lamp" class="card swiper-slide">
                   <a href="#product-page" class="card__link"></a>
                   <div class="card__photo">
                     <img
@@ -833,11 +842,7 @@
                 <article data-tab-value="lamp" class="card swiper-slide">
                   <a href="#product-page" class="card__link"></a>
                   <div class="card__photo">
-                    <img
-                      class="card__img"
-                      src="./img/products/lamp4.jpg"
-                      alt="chair"
-                    />
+                    <img class="card__img" src="./img/products/lamp4.jpg" alt="chair" />
                   </div>
 
                   <div class="card__desc">
@@ -861,7 +866,7 @@
                     </div>
                   </div>
                 </article>
-								
+
                 <article data-tab-value="lamp" class="card swiper-slide">
                   <a href="#product-page" class="card__link"></a>
                   <div class="card__photo">
@@ -894,7 +899,6 @@
                     </div>
                   </div>
                 </article>
-
               </div>
             </div>
             <button id="sliderPrev" class="slider__btn slider__btn--prev">
@@ -911,9 +915,9 @@
       </div>
     </section>
 
-    <footer class="footer none">
+    <footer class="footer">
       <div class="container container--small">
-				<!-- footer grid -->
+        <!-- footer grid -->
         <div class="footer__grid">
           <!-- desc start -->
           <div class="footer__desc">
@@ -929,34 +933,32 @@
           <div class="footer__nav footer__nav--services">
             <h3 class="footer__nav-title">Services</h3>
             <ul class="footer__list">
-							<li class="footer__list-item"><a href="#!">Email Marketing</a></li>
-							<li class="footer__list-item"><a href="#!">Campaigns</a></li>
-							<li class="footer__list-item"><a href="#!">Branding</a></li>
-						</ul>
+              <li class="footer__list-item"><a href="#!">Email Marketing</a></li>
+              <li class="footer__list-item"><a href="#!">Campaigns</a></li>
+              <li class="footer__list-item"><a href="#!">Branding</a></li>
+            </ul>
           </div>
 
-
-					<div class="footer__nav">
+          <div class="footer__nav">
             <h3 class="footer__nav-title">Furniture</h3>
             <ul class="footer__list">
-							<li class="footer__list-item"><a href="#!">Beds</a></li>
-							<li class="footer__list-item"><a href="#!">Chair</a></li>
-							<li class="footer__list-item"><a href="#!">All</a></li>
-						</ul>
+              <li class="footer__list-item"><a href="#!">Beds</a></li>
+              <li class="footer__list-item"><a href="#!">Chair</a></li>
+              <li class="footer__list-item"><a href="#!">All</a></li>
+            </ul>
           </div>
         </div>
 
-				<!-- footer row -->
+        <!-- footer row -->
         <div class="footer__row">
           <div class="footer__copyright">Copyright © 2023</div>
 
-          <div class="footer__links"><FormControl component="fieldset">
-						<FormLabel component="legend"></FormLabel>
-						<FormGroup>
-							
-						</FormGroup>
-						<FormHelperText></FormHelperText>
-					</FormControl>
+          <div class="footer__links">
+            <FormControl component="fieldset">
+              <FormLabel component="legend"></FormLabel>
+              <FormGroup> </FormGroup>
+              <FormHelperText></FormHelperText>
+            </FormControl>
             <a href="#!">Terms & Conditions</a>
             <a href="#!">Privacy Policy</a>
           </div>

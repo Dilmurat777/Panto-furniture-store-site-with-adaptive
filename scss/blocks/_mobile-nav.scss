@@ -1,5 +1,5 @@
 .mobile-nav__wrapper {
-	position: absolute;
+	position: fixed;
 	right: 0;
 	top: 0;
 	bottom: 0;
@@ -8,8 +8,8 @@
 	padding: 30px 30px;
 	background-color: var(--footer-bg);
 	color: var(--header-text-color);
-	z-index: 9;
-	display: none;
+	z-index: 10;
+	right: -320px;
 	a {
 		color: var(	--header-text-color);
 
@@ -20,7 +20,7 @@
 	}
 
 	&--open {
-		display: block;
+		right: 0;
 		transition: all 0.9s ease;
 	}
 	transition: all 0.9s ease;

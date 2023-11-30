@@ -37,23 +37,24 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   freeMode: true,
 
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 42,
 
-  // breakpoints: {
-  //   640: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20,
-  //   },
-  //   768: {
-  //     slidesPerView: 4,
-  //     spaceBetween: 40,
-  //   },
-  //   1024: {
-  //     slidesPerView: 5,
-  //     spaceBetween: 50,
-  //   },
-  // },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    920: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1230: {
+      slidesPerView: 4,
+      spaceBetween: 42,
+    },
+  
+  },
 
   // Navigation arrows
   navigation: {
